@@ -10,7 +10,7 @@ app.get('/', (_, res) => {
   res.send({
     hello: 'world'
   });
-  writeToFile('./out.txt', access_count++);
+  writeToFile('./out.txt', `${access_count++}`);
 });
 
 app.get('/count', (_, res) => {
